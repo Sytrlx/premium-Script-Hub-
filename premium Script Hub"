@@ -1,0 +1,108 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "Sytrlx premium Script Hub",
+     Style = 3,
+     SizeX = 500,
+     SizeY = 400,
+     Theme = "Dark"
+})
+
+local Page = UI.New({
+    Title = "Main"
+})
+
+Page.Button({
+    Text = "OwlHub",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Aimbot/Esp Script"            
+            })
+        end,
+        Op = function(self) 
+            table.foreach(self, print)
+        end
+    }
+})
+
+Page.Button({
+    Text = "infiniteyield",
+    Callback = function()
+       loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end,
+    Menu = {
+        Information = function(self)
+            UI.Banner({
+                Text = "Fe Admin Script!"            
+            })
+        end,
+    }
+})
+
+local Page2 = UI.New({
+    Title = "Bedwars"
+})
+
+Page2.Button({
+    Text = "Vape V4-Op!",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end
+})
+    
+local Page3 = UI.New({
+    Title = "Pet Sim X"
+})
+
+Page3.Button({
+    Text = "Maxx Hub",
+    Callback = function()
+        loadstring(game:HttpGet(("https://aizen.ml/uploads/petsimx.txt")))()    
+    end
+})
+
+Page3.Button({
+    Text = "Mana Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Mana42138/Manahub-Script-Hyper-804-was-here.lua/main/Hyper-is-still-here.lua"))()    
+    end
+})
+
+Page3.Button({
+    Text = "Floppa Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()    
+    end
+})
+
+Page3.Button({
+    Text = "Emerald Hub",
+    Callback = function()
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/Sxdness0001/emerald-pet-sim/main/petsim')();    
+    end
+})
+
+local Page4 = UI.New({
+    Title = "Shindo Life-Coming soon"
+})
+
+local Page5 = UI.New({
+    Title = "Credits"
+})
+
+Page5.Button({
+    Text = "Rengoku:Owner",
+    Callback = function()
+        print("Clicked!")    
+    end
+})
+
+Page5.Button({
+    Text = "Jersy:co-Owner",
+    Callback = function()
+        print("Clicked!")    
+    end
